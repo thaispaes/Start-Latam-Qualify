@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>qualify</title>
+	<!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!--Custom styles-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styleform.css">
+	<link href="css/loader.css" rel="stylesheet" type="text/css"/>
+	<style type="text/css">
+		#campo{
+			padding-top: 4px;
+		}
+	</style>
+</head>
+<body>
+	<div id="limiter" class="limiter">
+		<div class="container-loader">
+			<div class="wrap-loader p-l-55 p-r-55 p-t-65 p-b-50">
+				<form class="loader-form validate-form">
+					<span class="loader-form-title p-b-33">
+						<div class="progress d-flex justify-content-center">
+							<div class="spinner-border text-loader" style="width: 10rem; height: 10rem;" role="status">
+								<span class="sr-only">Loading</span>
+							</div>
+						</div>
+					</span>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="content">
+		<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+			<div class="container">
+				<a class="navbar-brand js-scroll-trigger" href="index.html">Qualify</a>
+				<!-- Site mobile -->
+				<button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars" style="margin-left: 4px;"></i></button>
+				<!-- desktop -->
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item mx-0 mx-lg-1">
+							<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="login.html">Login</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="d-flex justify-content-center h-100">
+			<div class="card" style="width: 560px!important;">
+				<div class="card-header">
+					<h3>Cadastro</h3>
+				</div>
+				<div class="card-body">
+					<form>
+						<div class="row">
+							<div class="col">
+								<input type="text" class="form-control" placeholder="Nome Completo">
+							</div>
+							<div class="col">
+								<select  class="form-control" id="uf">
+									<option selected value="">Selecione</option>
+									<option value="AC">Acre</option>
+									<option value="AL">Alagoas</option>
+									<option value="AP">Amapá</option>
+									<option value="AM">Amazonas</option>
+									<option value="BA">Bahia</option>
+									<option value="CE">Ceará</option>
+									<option value="DF">Distrito Federal</option>
+									<option value="ES">Espirito Santo</option>
+									<option value="GO">Goiás</option>
+									<option value="MA">Maranhão</option>
+									<option value="MS">Mato Grosso do Sul</option>
+									<option value="MT">Mato Grosso</option>
+									<option value="MG">Minas Gerais</option>
+									<option value="PA">Pará</option>
+									<option value="PB">Paraíba</option>
+									<option value="PR">Paraná</option>
+									<option value="PE">Pernambuco</option>
+									<option value="PI">Piauí</option>
+									<option value="RJ">Rio de Janeiro</option>
+									<option value="RN">Rio Grande do Norte</option>
+									<option value="RS">Rio Grande do Sul</option>
+									<option value="RO">Rondônia</option>
+									<option value="RR">Roraima</option>
+									<option value="SC">Santa Catarina</option>
+									<option value="SP">São Paulo</option>
+									<option value="SE">Sergipe</option>
+									<option value="TO">Tocantins</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col" id="campo">
+								<input type="email" class="form-control" placeholder="email@dominio.com">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col" id="campo">
+								<input type="text" class="form-control" placeholder="CPF">
+							</div>
+							<div class="col" id="campo">
+								<input type="text" class="form-control" placeholder="Celular">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col" id="campo">
+								<input type="text" class="form-control" placeholder="Nascimento">
+							</div>
+							<div class="col" id="campo">
+								<select  class="form-control" id="uf">
+									<option selected value="">Gênero</option>
+									<option value="Masculino">Masculino</option>
+									<option value="Feminino">Feminino</option>
+									<option value="Outros">Outros</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col" id="campo">
+								<input type="text" class="form-control" placeholder="Senha">
+							</div>
+							<div class="col" id="campo">
+								<input type="text" class="form-control" placeholder="Confirmação de senha">
+							</div>
+						</div>
+						<div id="campo" class="row">
+							<div class="col">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="opcao1" checked>
+									<label class="form-check-label" for="gridRadios1" style="color: white;">
+										Aluno
+									</label>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="opcao1" checked>
+									<label class="form-check-label" for="gridRadios1" style="color: white;">
+										Professor
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input class="btn btn-primary" type="submit" value="Cadastrar">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+	<!-- Third party plugin JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<!-- Contact form JS-->
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript">
+		/*Página aparece apenas se todos os componentes serem devidamente carregados.*/
+		window.onload = function () {
+			document.querySelector("#limiter").style.display="none"; 
+			$("#content").fadeIn();
+		}
+	</script>
+</body>
+</html>
